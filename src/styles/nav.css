@@ -1,0 +1,19 @@
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0px 5px 10px 0px #aaa;
+  background: #303947;
+}
+
+.nav-container a {
+  text-decoration: none;
+  padding: 12px 18px;
+  font-weight: 500;
+  font-size: 20px;
+  font-size: 18px;
+  color: #fff;
+}
+
+a:hover {
+  color: #e6e6e6;
+}

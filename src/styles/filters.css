@@ -1,0 +1,19 @@
+.filter-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin: 18px 0px;
+  align-items: end;
+}
+
+.filter-wrapper select,
+.filter-wrapper input {
+  font-size: 18px;
+  width: 100%;
+}
+
+.filter-wrapper label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}

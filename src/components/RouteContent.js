@@ -4,10 +4,11 @@ import Stats from "../pages/Stats";
 
 const RouteContent = (props) => {
   return (
-    <section>
+    <section className="main-wrapper">
       <Routes>
-        <Route path="/" Component={Main}/>
-        <Route path="stats" Component={Stats}/>
+
+        <Route path="/" Component={Main} />
+        <Route path="stats" Component={Stats} />
       </Routes>
     </section>
   )

@@ -1,22 +1,28 @@
-import { useEffect, useState } from "react";
+import '../styles/overview.css';
 import data from '../data/NavigStatistics.json';
 const overviewData = data.TotalStats[0];
 const Overview = (props) => {
+  let successRate = Math.round((overviewData.SuccessfulJobs / overviewData.TotalJobsReceived) * 100)
   return (
     <section>
-      <div>
-        <div>
-          <h3>Total Distance</h3>
-          <span>{overviewData.TotalDistanceTravelled}</span>
+      <div className='overview-wrapper'>
+        <div className='card-container col-2 col-sm-12'>
+          <div className='card-title'><span>Total Distance</span></div>
+          <span className='card-val'>{overviewData.TotalDistanceTravelled}</span>
         </div>
-        <div>
-          <h3>Total Jobs Received</h3>
-          <span>{overviewData.TotalJobsReceived}</span>
+        <div className='card-container col-2 col-sm-12'>
+          <div className='card-title'><span>Total Jobs Received</span></div>
+          <span className='card-val'>{overviewData.TotalJobsReceived}</span>
         </div>
 
-        <div>
-          <h3>Total Succesfull Jobs</h3>
-          <span>{overviewData.SuccessfulJobs}</span>
+        <div className='card-container col-2 col-sm-12'>
+          <div className='card-title'><span>Total Succesfull Jobs</span></div>
+          <span className='card-val'>{overviewData.SuccessfulJobs}</span>
+        </div>
+
+        <div className='card-container col-2 col-sm-12'>
+          <div className='card-title'><span>Jobs Success Rate</span></div>
+          <span className='card-val'>{successRate}%</span>
         </div>
       </div>
     </section>

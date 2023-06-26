@@ -1,0 +1,22 @@
+.charts-main {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 18px; */
+}
+
+.charts-main .chart-container {
+  margin: 14px 10px;
+  border: 2px solid #CDCDC9;
+  border-radius: 12px;
+  padding: 8px;
+  background: #F8F8F8;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+}
+
+.chart-container h2 {
+  margin: 0 0 16px 24px;
+}
+
+@media only screen and (max-width: 600px) {
+}

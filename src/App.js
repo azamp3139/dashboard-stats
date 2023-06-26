@@ -8,8 +8,8 @@ function App() {
 
     <BrowserRouter>
       <div className="App">
-        <Navigation />
-        <RouteContent />
+          <Navigation />
+          <RouteContent />
       </div>
     </BrowserRouter>
   );
